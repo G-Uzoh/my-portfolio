@@ -33,6 +33,17 @@ body {
   min-height: 100vh;
 }
 
+.front-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text {
+  width: 450px;
+  margin-right: 80px;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;

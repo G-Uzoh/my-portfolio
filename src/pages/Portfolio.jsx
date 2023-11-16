@@ -15,7 +15,6 @@ const Portfolio = () => {
 export default Portfolio;
 
 const Container = styled(Box)({
-  // backgroundColor: 'red',
   height: '80px',
   margin: 'none',
   padding: 'none',
