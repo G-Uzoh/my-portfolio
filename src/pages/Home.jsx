@@ -3,7 +3,7 @@ import { Avatar } from '@mui/material';
 
 const Home = () => {
     return (
-        <div className="front-page">
+        <div className="home">
             <div className="intro-text">
                 <h1>Hi, I am Awesome</h1>
                 <h2>A web developer based in Helsinki, Finland</h2>

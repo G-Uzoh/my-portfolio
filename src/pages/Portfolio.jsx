@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Home from "./Home";
+import Footer from "../components/Footer";
 import { Box } from "@mui/material";
 import { styled } from "@mui/system";
 
@@ -7,7 +8,10 @@ const Portfolio = () => {
   return (
     <Container>
       <Header />
-      <Home />
+      <main>
+        <Home />
+      </main>
+      <Footer />
     </Container>
   );
 }
