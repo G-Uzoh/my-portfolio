@@ -1,5 +1,5 @@
-import image from '../assets/react.svg';
 import { Avatar } from '@mui/material';
+import george from '../assets/george.jpg';
 
 const Home = () => {
     return (
@@ -11,7 +11,7 @@ const Home = () => {
                 <button>Get in touch</button>
             </div>
             <div className="display-photo">
-                <Avatar sx={{ width: 150, height: 150 }} src={image} alt='react logo' />
+                <Avatar sx={{ width: 150, height: 150 }} src={george} alt='photo of george' />
                 
             </div>
         </div>
