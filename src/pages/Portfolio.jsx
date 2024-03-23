@@ -1,7 +1,8 @@
 import Header from "../components/Header";
 import Home from "./Home";
+import About from "./About";
 import Footer from "../components/Footer";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
 const Portfolio = () => {
@@ -10,17 +11,26 @@ const Portfolio = () => {
       <Header />
       <main>
         <Home />
+        <About />
       </main>
       <Footer />
     </Container>
+    // <MyComponent>Styled div</MyComponent>
   );
 }
 
 export default Portfolio;
 
 const Container = styled(Box)({
-  height: '80px',
-  margin: 'none',
-  padding: 'none',
-  width: '100vw',
+  width: '100%',
+  display: 'flex',
+  flexDirection: 'column'
 });
+
+// const MyComponent = styled('div')({
+//   color: 'darkslategray',
+//   backgroundColor: 'aliceblue',
+//   padding: 8,
+//   borderRadius: 4,
+//   width: '100vw'
+// });

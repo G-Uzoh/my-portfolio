@@ -1,40 +1,60 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import { styled } from "@mui/system";
 
-const navLinks = ['Home', 'About', 'Project', 'Contact'];
-
 const Header = () => {
+  const navLinks = [
+    { title: 'About', serialNumber: '01.'},
+    { title: 'Experience', serialNumber: '02.'},
+    { title: 'Projects', serialNumber: '03.'},
+    { title: 'Contact', serialNumber: '04.'},
+    {title: 'Resume', serialNumber: ''},
+  ];
+  
+  const LeftWrapper = styled(Box)({
+    color: "var(--off-white)",
+  });
+  
+  const RightWrapper = styled(Box)({
+      display: 'flex',
+  });
+  
+  const Container = styled(Box)({
+    backgroundColor: 'rgba(10, 25, 47, 0.85)',
+    padding: "0 50px",
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+    height: 'var(--nav-height)',
+    position: 'fixed',
+    top: '0',
+    zIndex: 2,
+    backdropFilter: 'blur(10px)',
+    transition: 'var(--transition)'
+  });
+
   return (
     <Container>
-      <LeftWrapper>
-        <Typography>Awesome</Typography>
-      </LeftWrapper>
-      <RightWrapper>
-        {navLinks.map(link => {
-            return (
-            <Typography key={link} mx={2}>
-                {link}
-            </Typography>
-            );
-        })}
-      </RightWrapper>
+     <Box display='flex' justifyContent='space-between' alignItems='center' height='100px' width='100%'>
+        <LeftWrapper>
+          <Typography>LOGO</Typography>
+        </LeftWrapper>
+        <RightWrapper>
+          {navLinks.map(link => {
+              return (
+              <Button variant="text" sx={{"&:hover": {
+                  color: 'var(--yellow)'
+              }}}
+               key={link.serialNumber} mr='2rem'>
+                  <Typography sx={{color: 'var(--yellow)', marginRight: '0.875rem'}}>{link.serialNumber}</Typography>
+                  <Typography>{link.title}</Typography>
+              </Button>
+              );
+          })}
+        </RightWrapper>
+     </Box>
     </Container>
   );
 };
 
 export default Header;
-
-const LeftWrapper = styled(Box)({
-  color: "white",
-});
-
-const RightWrapper = styled(Box)({
-    display: 'flex',
-});
-
-const Container = styled(Box)({
-  backgroundColor: "#2d2d2d",
-  padding: "10px",
-  display: 'flex',
-  justifyContent: 'space-between',
-});

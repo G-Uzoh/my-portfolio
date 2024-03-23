@@ -1,8 +1,10 @@
 const Footer = () => {
+    const date = new Date().getFullYear();
+
     return (
         <footer>
             <small>
-                © George Uzoh
+                © {date} George Uzoh
             </small>
         </footer>
     );
