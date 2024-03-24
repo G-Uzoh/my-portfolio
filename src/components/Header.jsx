@@ -7,11 +7,10 @@ const Header = () => {
     { title: 'Experience', serialNumber: '02.'},
     { title: 'Projects', serialNumber: '03.'},
     { title: 'Contact', serialNumber: '04.'},
-    {title: 'Resume', serialNumber: ''},
   ];
   
   const LeftWrapper = styled(Box)({
-    color: "var(--off-white)",
+    color: "var(--yellow)",
   });
   
   const RightWrapper = styled(Box)({
@@ -30,7 +29,7 @@ const Header = () => {
     top: '0',
     zIndex: 2,
     backdropFilter: 'blur(10px)',
-    transition: 'var(--transition)'
+    transition: 'var(--transition)',
   });
 
   return (
@@ -42,7 +41,7 @@ const Header = () => {
         <RightWrapper>
           {navLinks.map(link => {
               return (
-              <Button variant="text" sx={{"&:hover": {
+              <Button variant="text" sx={{textTransform: 'capitalize', "&:hover": {
                   color: 'var(--yellow)'
               }}}
                key={link.serialNumber} mr='2rem'>
