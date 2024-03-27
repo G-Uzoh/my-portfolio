@@ -26,7 +26,7 @@
   --font-size-xxl: 24px;
   --font-size-heading: 32px;
   --border-radius: 5px;
-  --nav-height: 100px;
+  --nav-height: 70px;
   --nav-scroll-height: 70px;
 
   /* Animation */
@@ -77,9 +77,20 @@ header {
   border: 1px dashed grey;
 }
 
+nav {
+  font-family: var(--font-mono);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  color: var(--lightest-slate);
+  z-index: 6;
+}
+
 a {
   text-decoration: none;
-  color: var(--slate);
+  color: var(--lightest-slate);
 }
 
 section {

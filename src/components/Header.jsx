@@ -1,4 +1,4 @@
-import { ListItemButton, ListItemText, List, ListItem } from "@mui/material";
+import { ListItemButton, List, ListItem, Typography } from "@mui/material";
 
 const Header = () => {
   const navLinks = [
@@ -10,24 +10,21 @@ const Header = () => {
 
   return (
     <header>
-      <div>
-        <a href="/">LOGO</a>
-      </div>
-      <nav style={{ display: "flex" }}>
+      <nav>
+        <div>
+          <a href="/">LOGO</a>
+        </div>
         <List style={{ display: "flex" }}>
-          <ListItem>
+          <ListItem sx={{fontFamily: "monospace", padding: "10px"}}>
             {navLinks.map((link) => (
               <ListItemButton
                 key={link.serialNumber}
                 LinkComponent="a"
                 href={`#${link.title.toLowerCase()}`}
-                sx={{ "&:hover": { color: "var(--yellow)" } }}
+                sx={{ "&:hover": { color: "var(--yellow)" }, fontSize: "var(--font-size-xs)" }}
               >
-                <ListItemText
-                  primary={link.serialNumber}
-                  sx={{ color: "var(--yellow)", marginRight: "5px" }}
-                />
-                <ListItemText primary={link.title} />
+                <Typography sx={{ color: "var(--yellow)", marginRight: "4px", fontFamily: "var(--font-mono)", fontSize: "var(--font-size-xs)" }}>{link.serialNumber}</Typography>
+                <Typography sx={{ fontFamily: "var(--font-mono)", fontSize: "var(--font-size-xs)" }}>{link.title}</Typography>
               </ListItemButton>
             ))}
           </ListItem>
