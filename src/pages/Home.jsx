@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Box, Typography, Button } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 const Home = () => {
     const ResumeLink = styled(Box)({
