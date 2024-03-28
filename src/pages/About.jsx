@@ -7,7 +7,7 @@ import { useRef } from "react";
 const About = () => {
     const aboutRef = useRef();
     return (
-        <>
+        <div style={{display: "flex", alignItems: "center"}}>
         <div id="about" className="about">
             <h2 ref={aboutRef}>About me</h2>
             <p>
@@ -24,7 +24,7 @@ const About = () => {
             </ul>
         </div>
         <Avatar src={ugo} sx={{width: '400px', height: '400px', marginTop: '6rem'}} />
-        </>
+        </div>
     );
 }
 

@@ -5,13 +5,13 @@ import Home from "./Home";
 
 const Portfolio = () => {
   return (
-    <div>
+    <Box component="div">
       <Header />
-      <Container maxWidth='md'>
+      <Container component='main' maxWidth='md'>
         <Home />
         <About />
       </Container>
-    </div>
+    </Box>
   )
 }
 

@@ -1,18 +1,12 @@
 import { Box, Typography, Button } from '@mui/material';
-import { styled } from '@mui/system';
 
 const Home = () => {
-
-    // const Container = styled(Box)({
-    //     width: '100%',
-    //     height: '100vh',
-    //     display: 'flex',
-    //     justifyContent: 'center',
-    //     alignItems: 'center',
-    //     // marginTop: '50px',
-    // });
     return (
-        <Box component="section" id="hero">Home</Box>
+        <Box component="section" className="hero">
+            <Typography variant="subtitle2" component="h1" color="var(--yellow)" fontFamily="var(--font-mono)" margin="0 0 30px 4px">Hi, my name is</Typography>
+            <Typography variant="h1" component="h2" color="var(--lightest-slate)" fontSize="clamp(40px, 8vw, 80px)" fontWeight="700">George Uzoh</Typography>
+            <Typography variant="h2" component="h3" color="var(--slate)" fontSize="clamp(40px, 8vw, 80px)" fontWeight="500" margin="15px 0 0 0" lineHeight="0.9">I build accessible web solutions</Typography>
+        </Box>
         // <Container>
         //     <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         //        <Box display='flex' flexDirection='column' justifyContent='center'>

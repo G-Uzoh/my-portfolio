@@ -1,11 +1,11 @@
-// import DrawerAppBar from './pages/Portfolio';
+import { Box } from '@mui/system';
 import Portfolio from './pages/Portfolio';
 
 const App = () => {
   return (
-    <div>
+    <Box component="div">
       <Portfolio />
-  </div>
+    </Box>
   )
 }
 
