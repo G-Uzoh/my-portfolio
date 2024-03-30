@@ -123,3 +123,20 @@ h1, h2, h3 {
   width: 200px;
   margin-left: 20px;
 }
+
+.skillset li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+}
+
+.skillset li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--yellow);
+  font-size: var(--font-size-sm);
+  line-height: 18px;
+}
