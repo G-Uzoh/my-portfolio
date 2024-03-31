@@ -3,7 +3,6 @@ import { Avatar } from "@mui/material";
 import ugo from "../assets/ambassador.jpg";
 import { Box } from "@mui/system";
 
-// Should contain a brief description about yourself, image
 const About = () => {
   return (
     <Box component="section" id="about" sx={{ padding: "100px 0" }}>
@@ -36,11 +35,14 @@ const About = () => {
             <Typography component="p" margin="0 0 15px">
               Hi, my name is George, and I am a web developer based in Helsinki.
               I have collaborated on a few projects and completed several pet
-              projects.
+              projects. I typically build software solutions using the MERN stack.
             </Typography>
-            <Typography component="p">
+            <Typography component="p" margin="0 0 15px">
               When I am not busy writing code, I treat myself to a game of
               chess.
+            </Typography>
+            <Typography component="p">
+              I currently work with these technologies:
             </Typography>
           </Box>
           <Box
@@ -62,27 +64,11 @@ const About = () => {
             <Typography component="li">AWS</Typography>
           </Box>
         </Box>
-        <Box sx={{ position: "relative", maxWidth: "300px" }}>Image</Box>
+        <Box sx={{ position: "relative", maxWidth: "300px" }}>
+          <Avatar src={ugo} sx={{ width: "300px", height: "300px" }} />
+        </Box>
       </Box>
     </Box>
-    // <div style={{display: "flex", alignItems: "center"}}>
-    // <div id="about" className="about">
-    //     <h2 ref={aboutRef}>About me</h2>
-    //     <p>
-    //         Hi, welcome to my page. I am a web developer living in Finland. I have collaborated on a few projects and completed several pet projects. I typically build software solution using the MERN stack. When I am not busy writing code, I treat myself to a game of chess.
-    //     </p>
-    //     <Typography>I am currently working with these technologies:</Typography>
-    //     <ul>
-    //         <li>JavaScript</li>
-    //         <li>TypeScript</li>
-    //         <li>React</li>
-    //         <li>Redux Toolkit</li>
-    //         <li>Node.js</li>
-    //         <li>AWS</li>
-    //     </ul>
-    // </div>
-    // <Avatar src={ugo} sx={{width: '400px', height: '400px', marginTop: '6rem'}} />
-    // </div>
   );
 };
 
