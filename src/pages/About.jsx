@@ -1,7 +1,6 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { Avatar } from "@mui/material";
 import ugo from "../assets/ambassador.jpg";
-import { Box } from "@mui/system";
 
 const About = () => {
   return (
