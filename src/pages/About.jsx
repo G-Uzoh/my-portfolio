@@ -32,16 +32,16 @@ const About = () => {
       >
         <Box>
           <Box component="div">
-            <Typography component="p" margin="0 0 15px">
+            <Typography component="p" margin="0 0 15px" fontSize="var(--font-size-lg)">
               Hi, my name is George, and I am a web developer based in Helsinki.
               I have collaborated on a few projects and completed several pet
               projects. I typically build software solutions using the MERN stack.
             </Typography>
-            <Typography component="p" margin="0 0 15px">
+            <Typography component="p" margin="0 0 15px" fontSize="var(--font-size-lg)">
               When I am not busy writing code, I treat myself to a game of
               chess.
             </Typography>
-            <Typography component="p">
+            <Typography component="p" fontSize="var(--font-size-lg)">
               I currently work with these technologies:
             </Typography>
           </Box>
