@@ -1,4 +1,6 @@
 import { ListItemButton, List, ListItem, Typography } from "@mui/material";
+import logo from "../assets/logo.png"
+console.log(logo)
 
 const Header = () => {
   const navLinks = [
@@ -12,7 +14,9 @@ const Header = () => {
     <header>
       <nav>
         <div>
-          <a href="/">LOGO</a>
+          <a href="/">
+            <img src={logo} alt={"logo"} style={{width: "70px"}} />
+          </a>
         </div>
         <List style={{ display: "flex" }}>
           <ListItem sx={{ fontFamily: "monospace", padding: "10px" }}>
