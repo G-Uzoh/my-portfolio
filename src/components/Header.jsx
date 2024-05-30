@@ -1,6 +1,5 @@
 import { ListItemButton, List, ListItem, Typography } from "@mui/material";
 import logo from "../assets/logo.png"
-console.log(logo)
 
 const Header = () => {
   const navLinks = [
