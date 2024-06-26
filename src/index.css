@@ -30,7 +30,6 @@
   --nav-scroll-height: 70px;
 
   /* Animation */
-  /* --ease-in: cubic-bezier(0.645, 0.045, 0.355, 1);*/
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -71,7 +70,6 @@ header {
   z-index: 5;
   backdrop-filter: blur(10px);
   transition: var(--transition);
-  border: 1px dashed grey;
 }
 
 nav {
@@ -139,4 +137,8 @@ h1, h2, h3 {
   color: var(--yellow);
   font-size: var(--font-size-sm);
   line-height: 18px;
+}
+
+footer a:hover {
+  color: var(--yellow);
 }
