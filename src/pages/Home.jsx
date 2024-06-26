@@ -51,7 +51,6 @@ const Home = () => {
         I&apos;m a software developer with a focus on building accessible web
         products. Welcome to my page.
       </Typography>
-      <ResumeLink component="a">View my resume</ResumeLink>
     </Box>
   );
 };
