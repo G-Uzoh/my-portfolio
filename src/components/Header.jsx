@@ -3,10 +3,10 @@ import logo from "../assets/logo.png"
 
 const Header = () => {
   const navLinks = [
-    { title: "About", serialNumber: "01." },
-    { title: "Experience", serialNumber: "02." },
-    { title: "Projects", serialNumber: "03." },
-    { title: "Contact", serialNumber: "04." },
+    { title: "About" },
+    { title: "Experience" },
+    { title: "Projects" },
+    { title: "Contact" },
   ];
 
   return (
@@ -21,7 +21,7 @@ const Header = () => {
           <ListItem sx={{ fontFamily: "monospace", padding: "10px" }}>
             {navLinks.map((link) => (
               <ListItemButton
-                key={link.serialNumber}
+                key={link.title}
                 LinkComponent="a"
                 href={`#${link.title.toLowerCase()}`}
                 sx={{
@@ -29,16 +29,6 @@ const Header = () => {
                   fontSize: "var(--font-size-xs)",
                 }}
               >
-                <Typography
-                  sx={{
-                    color: "var(--yellow)",
-                    marginRight: "4px",
-                    fontFamily: "var(--font-mono)",
-                    fontSize: "var(--font-size-xs)",
-                  }}
-                >
-                  {link.serialNumber}
-                </Typography>
                 <Typography
                   sx={{
                     fontFamily: "var(--font-mono)",
