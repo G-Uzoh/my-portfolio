@@ -2,19 +2,6 @@ import styled from "@emotion/styled";
 import { Box, Typography } from "@mui/material";
 
 const Home = () => {
-  const ResumeLink = styled(Box)({
-    color: "var(--yellow)",
-    background: "transparent",
-    border: "1px solid var(--yellow)",
-    borderRadius: "var(--border-radius)",
-    padding: "1.25rem 1.75rem",
-    fontSize: "var(--font-size-sm)",
-    fontFamily: "var(--font-mono)",
-    lineHeight: "1",
-    textDecoration: "none",
-    cursor: "pointer",
-    marginTop: "50px",
-  });
 
   return (
     <Box component="section" className="hero">
