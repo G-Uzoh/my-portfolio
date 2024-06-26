@@ -4,7 +4,7 @@ import ugo from "../assets/ambassador.jpg";
 
 const About = () => {
   return (
-    <Box component="section" id="about" sx={{ padding: "100px 0" }}>
+    <Box component="section" id="about" sx={{ padding: "10px 0 100px" }}>
       <Typography
         component="h2"
         className="section-heading"

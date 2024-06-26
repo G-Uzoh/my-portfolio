@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 
 const Experience = () => {
     return (
-        <Box component="section" id="experience">
+        <Box component="section" id="experience" sx={{ padding: "10px 0 100px" }}>
             <Typography
                 component="h2"
                 className="section-heading"

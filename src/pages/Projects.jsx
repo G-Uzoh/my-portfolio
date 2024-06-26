@@ -15,7 +15,7 @@ const Projects = () => {
   });
 
   return (
-    <Box component="section" id="projects">
+    <Box component="section" id="projects" sx={{ padding: "10px 0 100px" }}>
       <Typography
         component="h2"
         className="section-heading"
